@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/gyu@genesislab.ai/GLCommonComponent'
+  s.homepage         = 'https://github.com/Genesis-Gyu/GLCommonComponent'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gyu@genesislab.ai' => 'gyu@genesislab.ai' }
