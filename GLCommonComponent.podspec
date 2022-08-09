@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GLCommonComponent'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GLCommonComponent.'
+  s.summary          = '제네시스랩에서 사용하는 공통 모듈입니다.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gyu@genesislab.ai' => 'gyu@genesislab.ai' }
-  s.source           = { :git => 'https://github.com/gyu@genesislab.ai/GLCommonComponent.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Genesis-Gyu/GLCommonComponent.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

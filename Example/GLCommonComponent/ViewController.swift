@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import GLCommonComponent
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let viewController = self.view.findViewController() as? ViewController {
+            print("viewcontoller \(viewController)")
+        }
+        print("self.view.findViewController() : \(self.view.findViewController())")
     }
 
     override func didReceiveMemoryWarning() {
