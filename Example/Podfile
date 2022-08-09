@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GLCommonComponent_Example' do
+  pod 'GLCommonComponent', :path => '../'
+
+  target 'GLCommonComponent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
