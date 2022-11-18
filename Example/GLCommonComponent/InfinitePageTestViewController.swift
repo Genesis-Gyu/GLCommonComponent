@@ -15,7 +15,6 @@ class InfinitePageTestViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-        
     }
     
 }
