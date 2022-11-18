@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Sources/*.swift'
   
+  s.swift_version    = '5.0'
   
   # s.resource_bundles = {
   #   'GLCommonComponent' => ['GLCommonComponent/Assets/*.png']
@@ -40,4 +41,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit', '~> 5.6.0'
 end

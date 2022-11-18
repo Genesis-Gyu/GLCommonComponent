@@ -8,16 +8,55 @@
 
 import UIKit
 import GLCommonComponent
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    let screenSize = UIScreen.main.bounds.size
+    let listTableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let viewController = self.view.findViewController() as? ViewController {
-            print("viewcontoller \(viewController)")
+        makeListTableView()
+    }
+    
+    func makeListTableView() {
+        self.view.addSubview(listTableView)
+        listTableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        listTableView.dataSource = self
+        listTableView.delegate = self
+        listTableView.snp.makeConstraints { make in
+            make.left.top.equalTo(0)
+            make.width.equalTo(screenSize.width)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
         }
-        print("self.view.findViewController() : \(self.view.findViewController())")
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        cell.textLabel?.text = "Infinite Page Scroll View"
+        // Configure the cell...
+
+        return cell
+    }
+     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            print("didSelect")
+            let infinitePageViewController = InfinitePageTestViewController()
+            self.navigationController?.pushViewController(infinitePageViewController, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {

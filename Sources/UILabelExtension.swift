@@ -38,4 +38,14 @@ extension UILabel {
         return Int(ceil(labelTextSize.height / font.lineHeight))
     }
  
+    func setGradationTextColor(gradientLayer: CAGradientLayer) {
+        let screenSize = UIScreen.main.bounds.size
+        let textSize = self.sizeThatFits(CGSize(width: screenSize.width, height: screenSize.height))
+        let textRect = CGRect(x: 0, y: 0, width: textSize.width, height: textSize.height)
+        
+        let gradientColor = ColorPallete.gradientColor(bounds: textRect,
+                                                       gradientLayer: gradientLayer)
+        
+        self.textColor = gradientColor
+    }
 }

@@ -6,19 +6,6 @@
 //
 
 import UIKit
-/*
-extension UILabel {
-    func setGradationTextColor(gradientLayer: CAGradientLayer = GradientMaker.makeSecondaryOrangeGradientLayer()) {
-        let textSize = self.sizeThatFits(CGSize(width: screenSize.width, height: screenSize.height))
-        let textRect = CGRect(x: 0, y: 0, width: textSize.width, height: textSize.height)
-        
-        let gradientColor = ColorPallete.gradientColor(bounds: textRect,
-                                                       gradientLayer: gradientLayer)
-        
-        self.textColor = gradientColor
-    }
-}*/
-
 
 extension UIViewController {
     func showNetworkFailAlert() {
