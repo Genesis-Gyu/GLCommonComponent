@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FontPallete: NSObject {
+public class FontPallete: NSObject {
     
     class func showFontList() {
         for family in UIFont.familyNames {

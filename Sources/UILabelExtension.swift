@@ -47,5 +47,6 @@ extension UILabel {
                                                        gradientLayer: gradientLayer)
         
         self.textColor = gradientColor
+        
     }
 }
