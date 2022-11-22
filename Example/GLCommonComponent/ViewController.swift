@@ -40,14 +40,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 2
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = "Infinite Page Scroll View"
-        // Configure the cell...
-
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Infinite Page Scroll View"
+        } else if indexPath.row == 1 {
+            cell.textLabel?.text = "Snow View"
+        }
+        
         return cell
     }
      
@@ -57,6 +60,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("didSelect")
             let infinitePageViewController = InfinitePageTestViewController()
             self.navigationController?.pushViewController(infinitePageViewController, animated: true)
+        } else if indexPath.row == 1 {
+            let snowTestViewController = SnowViewTestViewController()
+            self.navigationController?.pushViewController(snowTestViewController, animated: true)
         }
     }
 
