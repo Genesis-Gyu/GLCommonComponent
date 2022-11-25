@@ -26,7 +26,7 @@ class InfinitePageTestViewController: UIViewController {
         infinitePageScrollView1.snp.makeConstraints { make in
             make.left.equalTo(0)
             make.top.equalTo(100)
-            //make.width.height.equalTo(infinitePageScrollView1.pageSize)
+            make.width.height.equalTo(infinitePageScrollView1.pageSize)
         }
         
         let labelViews = [makeTestLabel(text: "1", backgroundColor: .green), makeTestLabel(text: "2", backgroundColor: .blue),
@@ -39,7 +39,7 @@ class InfinitePageTestViewController: UIViewController {
         infinitePageScrollView2.snp.makeConstraints { make in
             make.top.equalTo(infinitePageScrollView1.snp.bottom).offset(10)
             make.centerX.equalTo(self.view)
-            //make.width.height.equalTo(infinitePageScrollView2.pageSize)
+            make.width.height.equalTo(infinitePageScrollView2.pageSize)
         }
         let labelViews2 = [makeTestLabel(text: "1", backgroundColor: .green), makeTestLabel(text: "2", backgroundColor: .blue),
                           makeTestLabel(text: "3", backgroundColor: .brown), makeTestLabel(text: "4", backgroundColor: .lightGray)]

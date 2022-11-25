@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5530B3232927756700BF8FA3 /* InfinitePageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530B3222927756700BF8FA3 /* InfinitePageTestViewController.swift */; };
-		5591293B292CA765006D1EB5 /* SnowViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591293A292CA765006D1EB5 /* SnowViewTestViewController.swift */; };
+		5591293B292CA765006D1EB5 /* PartilcePlayViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591293A292CA765006D1EB5 /* PartilcePlayViewTestViewController.swift */; };
 		55912943292CAA48006D1EB5 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55912941292CAA48006D1EB5 /* snow.sks */; };
 		55912944292CAA48006D1EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55912942292CAA48006D1EB5 /* Assets.xcassets */; };
 		55912949292CCFB0006D1EB5 /* rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55912948292CCFB0006D1EB5 /* rain.sks */; };
@@ -37,7 +37,7 @@
 		21439CEE9A7AB197B1ED82B2 /* Pods-GLCommonComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLCommonComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-GLCommonComponent_Tests/Pods-GLCommonComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3C809A25CE0847856FD843C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5530B3222927756700BF8FA3 /* InfinitePageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageTestViewController.swift; sourceTree = "<group>"; };
-		5591293A292CA765006D1EB5 /* SnowViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowViewTestViewController.swift; sourceTree = "<group>"; };
+		5591293A292CA765006D1EB5 /* PartilcePlayViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartilcePlayViewTestViewController.swift; sourceTree = "<group>"; };
 		55912941292CAA48006D1EB5 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
 		55912942292CAA48006D1EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55912948292CCFB0006D1EB5 /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				5530B3222927756700BF8FA3 /* InfinitePageTestViewController.swift */,
-				5591293A292CA765006D1EB5 /* SnowViewTestViewController.swift */,
+				5591293A292CA765006D1EB5 /* PartilcePlayViewTestViewController.swift */,
 				55912941292CAA48006D1EB5 /* snow.sks */,
 				55912948292CCFB0006D1EB5 /* rain.sks */,
 				5591294A292CCFCF006D1EB5 /* fire.sks */,
@@ -357,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5591293B292CA765006D1EB5 /* SnowViewTestViewController.swift in Sources */,
+				5591293B292CA765006D1EB5 /* PartilcePlayViewTestViewController.swift in Sources */,
 				5530B3232927756700BF8FA3 /* InfinitePageTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

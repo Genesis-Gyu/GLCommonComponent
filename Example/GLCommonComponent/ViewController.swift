@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if indexPath.row == 0 {
             cell.textLabel?.text = "Infinite Page Scroll View"
         } else if indexPath.row == 1 {
-            cell.textLabel?.text = "Snow View"
+            cell.textLabel?.text = "Particle Play View"
         }
         
         return cell
@@ -61,8 +61,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let infinitePageViewController = InfinitePageTestViewController()
             self.navigationController?.pushViewController(infinitePageViewController, animated: true)
         } else if indexPath.row == 1 {
-            let snowTestViewController = SnowViewTestViewController()
-            self.navigationController?.pushViewController(snowTestViewController, animated: true)
+            let particlePlayViewController = PartilcePlayViewTestViewController()
+            self.navigationController?.pushViewController(particlePlayViewController, animated: true)
         }
     }
 

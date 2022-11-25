@@ -9,9 +9,9 @@
 import UIKit
 import GLCommonComponent
 
-class SnowViewTestViewController: UIViewController {
+class PartilcePlayViewTestViewController: UIViewController {
 
-    let snowView = SnowView()
+    let particlePlayView = ParticlePlayView()
     
     let startButton = UIButton()
     let stopButton = UIButton()
@@ -20,15 +20,15 @@ class SnowViewTestViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .black
 
-        makeSnowView()
+        makeParticlePlayView()
         
         makeStartButton()
         makeStopButton()
     }
     
-    func makeSnowView() {
-        self.view.addSubview(snowView)
-        snowView.snp.makeConstraints { make in
+    func makeParticlePlayView() {
+        self.view.addSubview(particlePlayView)
+        particlePlayView.snp.makeConstraints { make in
             make.top.left.equalTo(0)
             make.width.bottom.equalTo(self.view)
         }
@@ -56,7 +56,7 @@ class SnowViewTestViewController: UIViewController {
     
     @objc func touchStartButton() {
         //You can change sks file, In this project imported "snow", "rain", "fire"
-        snowView.startSnow(sksFileName: "snow")
+        particlePlayView.start(sksFileName: "snow")
     }
     
     func makeStopButton() {
@@ -76,7 +76,7 @@ class SnowViewTestViewController: UIViewController {
     }
     
     @objc func touchStopButton() {
-        snowView.stopSnow()
+        particlePlayView.stop()
     }
 
 }
